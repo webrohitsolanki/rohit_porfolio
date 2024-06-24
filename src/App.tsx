@@ -7,16 +7,13 @@ import { GlobalStyle } from './styles/global'
 import 'react-toastify/dist/ReactToastify.css'
 import { myData } from '../src/data/data.js'
 
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <GlobalStyle></GlobalStyle>
       <Header data={myData}></Header>
-      <Routes>
-        <Route path="/" element={<Main data={myData}/>} />
-      </Routes>
+      <Main data={myData}></Main>
       <Footer data={myData}></Footer>
     </>
   )
